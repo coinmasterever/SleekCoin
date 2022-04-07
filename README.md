@@ -46,7 +46,7 @@ touch ~/.zcash/zcash.conf
 
 #### Build the node
 
-Build SleekCoin along with most dependencies from source by running the following command:
+Build SleekCoin along with most dependencies (will be downloaded during the build process) from source by running the following command:
 
 ```
 ./zcutil/build.sh -j$(nproc)
