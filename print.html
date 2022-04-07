@@ -135,48 +135,32 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1>Zcash 4.7.0-rc1
-<img align="right" width="120" height="80" src="doc/imgs/logo.png"></h1>
-<h2 id="what-is-zcash"><a class="header" href="#what-is-zcash">What is Zcash?</a></h2>
-<p><a href="https://z.cash/">Zcash</a> is an implementation of the &quot;Zerocash&quot; protocol.
-Based on Bitcoin's code, Zcash intends to offer a far higher standard of privacy
-through a sophisticated zero-knowledge proving scheme that preserves
-confidentiality of transaction metadata. More technical details are available
-in our <a href="https://zips.z.cash/protocol/protocol.pdf">Protocol Specification</a>.</p>
-<p>This software is the Zcash client. It downloads and stores the entire history
-of Zcash transactions; depending on the speed of your computer and network
-connection, the synchronization process could take a day or more once the
-blockchain has reached a significant size.</p>
-<p align="center">
-  <img src="doc/imgs/zcashd_screen.gif" height="500">
-</p>
-<h4 id="lock-security-warnings"><a class="header" href="#lock-security-warnings">:lock: Security Warnings</a></h4>
-<p>See important security warnings on the
-<a href="https://z.cash/support/security/">Security Information page</a>.</p>
-<p><strong>Zcash is experimental and a work in progress.</strong> Use it at your own risk.</p>
-<h4 id="ledger-deprecation-policy"><a class="header" href="#ledger-deprecation-policy">:ledger: Deprecation Policy</a></h4>
-<p>This release is considered deprecated 16 weeks after the release day. There
-is an automatic deprecation shutdown feature which will halt the node some
-time after this 16-week period. The automatic feature is based on block
-height.</p>
+                        <h1 id="sleekcoin"><a class="header" href="#sleekcoin">SleekCoin</a></h1>
+<h2 id="what-is-sleekcoin"><a class="header" href="#what-is-sleekcoin">What is SleekCoin</a></h2>
+<p>SleekCoin is a new crypto currency which is forked from Zcash, the project is stil under development.</p>
+<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h2>
+<h3 id="recommended-environment"><a class="header" href="#recommended-environment">Recommended environment</a></h3>
+<p>Our recommendation is Ubuntu distribution</p>
+<h3 id="dependencies"><a class="header" href="#dependencies">Dependencies</a></h3>
+<p>Please install the following before building the project</p>
+<pre><code>    sudo apt-get install git make binutils curl gobjc++ libncurses5 autotools-dev automake libtool
+</code></pre>
 <h2 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h2>
-<p>Please see our <a href="https://zcash.readthedocs.io/en/latest/rtd_pages/rtd_docs/user_guide.html">user guide</a> for joining the main Zcash network.</p>
 <h3 id="need-help"><a class="header" href="#need-help">Need Help?</a></h3>
 <ul>
-<li>:blue_book: See the documentation at the <a href="https://zcash.readthedocs.io">ReadTheDocs</a>
-for help and more information.</li>
-<li>:incoming_envelope: Ask for help on the <a href="https://forum.z.cash/">Zcash</a> forum.</li>
-<li>:speech_balloon: Join our community on <a href="https://discordapp.com/invite/PhJY6Pm">Discord</a></li>
+<li>:speech_balloon: Join our community on <a href="https://discordapp.com/invite/******">Discord</a></li>
 </ul>
-<p>Participation in the Zcash project is subject to a
-<a href="code_of_conduct.html">Code of Conduct</a>.</p>
+<h3 id="latest-stable-branch"><a class="header" href="#latest-stable-branch">Latest stable branch</a></h3>
+<p>Checkout the latest stable branch</p>
+<pre><code>git checkout v4.6.0-2
+</code></pre>
 <h3 id="building"><a class="header" href="#building">Building</a></h3>
-<p>Build Zcash along with most dependencies from source by running the following command:</p>
+<p>Build SleekCoin along with most dependencies from source by running the following command:</p>
 <pre><code>./zcutil/build.sh -j$(nproc)
 </code></pre>
-<p>Currently, Zcash is only officially supported on Debian and Ubuntu. See the
-<a href="https://zcash.readthedocs.io/en/latest/rtd_pages/Debian-Ubuntu-build.html">Debian / Ubuntu build</a>
-for detailed instructions.</p>
+<p>Clean previous builds by running the following command:</p>
+<pre><code> ./zcutil/clean.sh
+</code></pre>
 <h2 id="license"><a class="header" href="#license">License</a></h2>
 <p>For license information see the file <a href="COPYING">COPYING</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="user-documentation"><a class="header" href="#user-documentation">User Documentation</a></h1>
