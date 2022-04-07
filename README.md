@@ -1,64 +1,52 @@
-Zcash 4.7.0-rc1
-<img align="right" width="120" height="80" src="doc/imgs/logo.png">
+SleekCoin
 ===========
 
-What is Zcash?
+What is SleekCoin
 --------------
+SleekCoin is a new crypto currency which is forked from Zcash, the project is stil under development.
 
-[Zcash](https://z.cash/) is an implementation of the "Zerocash" protocol.
-Based on Bitcoin's code, Zcash intends to offer a far higher standard of privacy
-through a sophisticated zero-knowledge proving scheme that preserves
-confidentiality of transaction metadata. More technical details are available
-in our [Protocol Specification](https://zips.z.cash/protocol/protocol.pdf).
+## Prerequisites
 
-This software is the Zcash client. It downloads and stores the entire history
-of Zcash transactions; depending on the speed of your computer and network
-connection, the synchronization process could take a day or more once the
-blockchain has reached a significant size.
+### Recommended environment
 
-<p align="center">
-  <img src="doc/imgs/zcashd_screen.gif" height="500">
-</p>
+Our recommendation is Ubuntu distribution
 
-#### :lock: Security Warnings
+### Dependencies
 
-See important security warnings on the
-[Security Information page](https://z.cash/support/security/).
+Please install the following before building the project
 
-**Zcash is experimental and a work in progress.** Use it at your own risk.
-
-####  :ledger: Deprecation Policy
-
-This release is considered deprecated 16 weeks after the release day. There
-is an automatic deprecation shutdown feature which will halt the node some
-time after this 16-week period. The automatic feature is based on block
-height.
+```
+    sudo apt-get install git make binutils curl gobjc++ libncurses5 autotools-dev automake libtool
+```
 
 ## Getting Started
 
-Please see our [user guide](https://zcash.readthedocs.io/en/latest/rtd_pages/rtd_docs/user_guide.html) for joining the main Zcash network.
-
 ### Need Help?
 
-* :blue_book: See the documentation at the [ReadTheDocs](https://zcash.readthedocs.io)
-  for help and more information.
-* :incoming_envelope: Ask for help on the [Zcash](https://forum.z.cash/) forum.
-* :speech_balloon: Join our community on [Discord](https://discordapp.com/invite/PhJY6Pm)
+* :speech_balloon: Join our community on [Discord](https://discordapp.com/invite/******)
 
-Participation in the Zcash project is subject to a
-[Code of Conduct](code_of_conduct.md).
+### Latest stable branch
+
+Checkout the latest stable branch
+
+```
+git checkout v4.6.0-2
+```
 
 ### Building
 
-Build Zcash along with most dependencies from source by running the following command:
+Build SleekCoin along with most dependencies from source by running the following command:
 
 ```
 ./zcutil/build.sh -j$(nproc)
 ```
 
-Currently, Zcash is only officially supported on Debian and Ubuntu. See the
-[Debian / Ubuntu build](https://zcash.readthedocs.io/en/latest/rtd_pages/Debian-Ubuntu-build.html)
-for detailed instructions.
+Clean previous builds by running the following command:
+
+
+```
+ ./zcutil/clean.sh
+```
 
 License
 -------
