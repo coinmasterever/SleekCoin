@@ -33,7 +33,18 @@ Checkout the latest stable branch
 git checkout v4.6.0-2
 ```
 
-### Building
+### Create your own testnet
+
+#### Configure your node
+
+Create new configuration file
+
+```
+mkdir -p ~/.zcash
+touch ~/.zcash/zcash.conf
+```
+
+#### Build the node
 
 Build SleekCoin along with most dependencies from source by running the following command:
 
