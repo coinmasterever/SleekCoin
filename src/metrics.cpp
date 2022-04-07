@@ -616,17 +616,11 @@ void ThreadShowMetricsScreen()
 
         // Clear screen
         std::cout << "\e[2J";
-
-        // Print art
-        std::cout << METRICS_ART << std::endl;
         std::cout << std::endl;
 
         // Thank you text
-        std::cout << strprintf(_("Thank you for running a %s zcashd v%s node!"), WhichNetwork(), FormatVersion(CLIENT_VERSION)) << std::endl;
+        std::cout << strprintf(_("Thank you for running a %s SleekCoin v%s node!"), WhichNetwork(), FormatVersion(CLIENT_VERSION)) << std::endl;
         std::cout << _("You're helping to strengthen the network and contributing to a social good :)") << std::endl;
-
-        // Privacy notice text
-        std::cout << PrivacyInfo();
         std::cout << std::endl;
     }
 
