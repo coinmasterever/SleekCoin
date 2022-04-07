@@ -16,7 +16,9 @@ Our recommendation is Ubuntu distribution
 Please install the following before building the project
 
 ```
-    sudo apt-get install git make binutils curl gobjc++ libncurses5 autotools-dev automake libtool
+    sudo apt-get install git make binutils curl gobjc++ libncurses5 autotools-dev automake libtool python pip
+    sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev
+    pip install pyOpenSSL secrets
 ```
 
 ## Getting Started
